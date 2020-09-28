@@ -1,23 +1,29 @@
-012408-1606P
---updated Lexer.l
+Heap File Implementation - Database Systems Implementation 
 
-readme 
-=========
-Test driver for Assignment 1 heap DBFile (spring 2011 dbi) 
+Contributors:
+[Siddharth Jain](https://github.com/siddharthj) 
+[Megha Nagarmunoli](https://github.com/MeghaNagarmunoli)
 
-This test driver gives a menu-based interface to three options that allows you to test your code:
+
+The test driver gives a menu-based interface to three options that allows you to test your code:
 	1. load (read a tpch file and write it out a heap DBFile)
 	2. scan (read records from an existing heap DBFile)
 	3. scan & filter (read records and filter using a CNF predicate)
 
 Note that the driver only works with the tpch files (generated using the dbgen program). 
 
-To compile the driver, type
+To compile the driver:
 	make test.out
 
-To run the driver, type
+To run the driver:
 	test.out
 and follow the on-screen instructions.
+
+To run the gTests:
+a) make gtests.out
+b) ./gtest.out
+
+See [here](https://github.com/MeghaNagarmunoli/database-systems-implementation/blob/master/Report.pdf) for results, and implementation details.
 
 Using the driver:
 ==================
@@ -111,3 +117,7 @@ q12
 (l_shipmode = 'AIR') AND
 (l_linestatus = 'F') AND
 (l_tax < 0.07)
+
+
+
+
